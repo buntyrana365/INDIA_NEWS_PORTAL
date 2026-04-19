@@ -1,0 +1,112 @@
+[
+  {
+    "id": "aaj-tak",
+    "name": "Aaj Tak",
+    "description": "India's most-watched Hindi news channel providing 24/7 breaking news coverage.",
+    "description_hi": "भारत का सबसे ज्यादा देखा जाने वाला हिंदी समाचार चैनल।",
+    "description_mr": "भारतातील सर्वाधिक पाहिले जाणारे हिंदी वृत्त वाहिनी।",
+    "website": "https://www.aajtak.in",
+    "logo": "aaj_tak.png",
+    "languages": ["hi", "en"],
+    "color": "#E53935"
+  },
+  {
+    "id": "abp-news",
+    "name": "ABP News",
+    "description": "Leading Hindi news network delivering news across politics, entertainment and sports.",
+    "description_hi": "राजनीति, मनोरंजन और खेल में समाचार प्रदान करने वाला प्रमुख हिंदी समाचार नेटवर्क।",
+    "description_mr": "राजकारण, मनोरंजन आणि क्रीडा क्षेत्रातील बातम्या देणारे अग्रगण्य हिंदी वृत्त नेटवर्क।",
+    "website": "https://www.abplive.com",
+    "logo": "abp_news.png",
+    "languages": ["hi", "en"],
+    "color": "#D32F2F"
+  },
+  {
+    "id": "ndtv",
+    "name": "NDTV",
+    "description": "New Delhi Television — one of India's most credible English and Hindi news channels.",
+    "description_hi": "न्यू दिल्ली टेलीविज़न — भारत के सबसे विश्वसनीय अंग्रेज़ी और हिंदी समाचार चैनलों में से एक।",
+    "description_mr": "न्यू दिल्ली टेलिव्हिजन — भारतातील सर्वात विश्वासार्ह इंग्रजी आणि हिंदी वृत्त वाहिन्यांपैकी एक।",
+    "website": "https://www.ndtv.com",
+    "logo": "ndtv.png",
+    "languages": ["en", "hi"],
+    "color": "#1565C0"
+  },
+  {
+    "id": "amar-ujala",
+    "name": "Amar Ujala",
+    "description": "One of the largest Hindi-language daily newspapers, strong in UP and Uttarakhand coverage.",
+    "description_hi": "सबसे बड़े हिंदी दैनिक समाचार पत्रों में से एक, यूपी और उत्तराखंड में मजबूत कवरेज।",
+    "description_mr": "सर्वात मोठ्या हिंदी दैनिक वृत्तपत्रांपैकी एक, यूपी आणि उत्तराखंडमध्ये मजबूत कव्हरेज।",
+    "website": "https://www.amarujala.com",
+    "logo": "amar_ujala.png",
+    "languages": ["hi"],
+    "color": "#F57C00"
+  },
+  {
+    "id": "dainik-bhaskar",
+    "name": "Dainik Bhaskar",
+    "description": "India's largest Hindi newspaper group with extensive district-level reporting.",
+    "description_hi": "भारत का सबसे बड़ा हिंदी समाचार पत्र समूह, जिला स्तर की व्यापक रिपोर्टिंग।",
+    "description_mr": "भारतातील सर्वात मोठा हिंदी वृत्तपत्र समूह, जिल्हा स्तरावर व्यापक वार्तांकन।",
+    "website": "https://www.bhaskar.com",
+    "logo": "dainik_bhaskar.png",
+    "languages": ["hi"],
+    "color": "#FF8F00"
+  },
+  {
+    "id": "india-today",
+    "name": "India Today",
+    "description": "Premier English news magazine and TV channel covering national and international news.",
+    "description_hi": "राष्ट्रीय और अंतर्राष्ट्रीय समाचारों को कवर करने वाली प्रमुख अंग्रेज़ी समाचार पत्रिका।",
+    "description_mr": "राष्ट्रीय आणि आंतरराष्ट्रीय बातम्या कव्हर करणारे प्रमुख इंग्रजी वृत्त मासिक।",
+    "website": "https://www.indiatoday.in",
+    "logo": "india_today.png",
+    "languages": ["en", "hi"],
+    "color": "#C62828"
+  },
+  {
+    "id": "the-hindu",
+    "name": "The Hindu",
+    "description": "One of India's oldest and most respected English-language newspapers.",
+    "description_hi": "भारत के सबसे पुराने और सबसे सम्मानित अंग्रेज़ी भाषा के समाचार पत्रों में से एक।",
+    "description_mr": "भारतातील सर्वात जुन्या आणि सर्वाधिक आदरणीय इंग्रजी भाषेतील वृत्तपत्रांपैकी एक।",
+    "website": "https://www.thehindu.com",
+    "logo": "the_hindu.png",
+    "languages": ["en"],
+    "color": "#1B5E20"
+  },
+  {
+    "id": "zee-news",
+    "name": "Zee News",
+    "description": "Popular Hindi news channel with comprehensive coverage across India.",
+    "description_hi": "भारत भर में व्यापक कवरेज वाला लोकप्रिय हिंदी समाचार चैनल।",
+    "description_mr": "संपूर्ण भारतभर व्यापक कव्हरेज असलेली लोकप्रिय हिंदी वृत्त वाहिनी।",
+    "website": "https://zeenews.india.com",
+    "logo": "zee_news.png",
+    "languages": ["hi", "en"],
+    "color": "#E91E63"
+  },
+  {
+    "id": "republic-tv",
+    "name": "Republic TV",
+    "description": "English-language Indian news channel known for investigative journalism.",
+    "description_hi": "खोजी पत्रकारिता के लिए जाना जाने वाला अंग्रेज़ी भाषा का भारतीय समाचार चैनल।",
+    "description_mr": "शोध पत्रकारितेसाठी ओळखले जाणारे इंग्रजी भाषेतील भारतीय वृत्त वाहिनी।",
+    "website": "https://www.republicworld.com",
+    "logo": "republic_tv.png",
+    "languages": ["en", "hi"],
+    "color": "#0D47A1"
+  },
+  {
+    "id": "news18",
+    "name": "News18",
+    "description": "Multi-language news platform with editions in Hindi, English, and regional languages.",
+    "description_hi": "हिंदी, अंग्रेज़ी और क्षेत्रीय भाषाओं में संस्करणों वाला बहुभाषी समाचार मंच।",
+    "description_mr": "हिंदी, इंग्रजी आणि प्रादेशिक भाषांमध्ये आवृत्त्या असलेले बहुभाषिक वृत्त व्यासपीठ।",
+    "website": "https://www.news18.com",
+    "logo": "news18.png",
+    "languages": ["en", "hi", "mr"],
+    "color": "#B71C1C"
+  }
+]

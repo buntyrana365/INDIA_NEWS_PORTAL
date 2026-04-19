@@ -1,0 +1,5 @@
+import requests
+url = 'https://news.google.com/rss/articles/CBMi1wFBVV95cUxPbGs4ZlpFWW9kemZvMUx6VkFTSk8yQjFPR255Y0RZLTR0d3BhYktzdFpMMEtTdUw5OFU3MDFETEVLci1EUHNYQUpoQTZYNzhaQlVnYUhoZmRPSDVleGN0OEpZd1pTa3RJUjBnNUd5UTRvYVNrV0lLUDFwTzQtckdtRnNnTDRPcEJIZHpiN0V4TnhrNm1qbm9jUHNUQnZjUU5uTDhtbzAwTXdtMFREUDBEd2tXdHdNR2g2UDJGX0piQTFyM09FcEpCVEpuOVZVTE9aR1ZTRkZRZ9IB3AFBVV95cUxNS0lxVjBSMUNQQ25iTVh4MDhVRlhaX1FSZ0RRSVQ1VjdyR3pNbUg5WkR4VXZiVkYyR1lKX0N0UjdSaV8ydGdsTUxhaE5UTDBIYTZKSnZnR2ItVzNLNFFTbW1LR09lcS1VeWN5cElpLUVqclFRWTVobmoyYkROb19udnlQY3JzR3hZTXZBeGpnUFUxMUZEenpMbTJMRXc0dTZQUWpwMEtTZ0o1dW84QlAtX2tDc3dhSmd3X3VoZ0djVDBaRG9ldWpRUllqbVlvYWRPSnlsbTB5ajhaVy1t?oc=5'
+r = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
+with open('redirect.html', 'w', encoding='utf-8') as f:
+    f.write(r.text)

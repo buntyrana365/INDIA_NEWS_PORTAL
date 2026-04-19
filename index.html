@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="India Flash News — Search district-level news across India in English, Hindi, and Marathi. Powered by trusted sources.">
+  <title>India Flash News — District-Level News Search</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <div class="logo-icon">⚡</div>
+        <span class="logo-text">India Flash News</span>
+        <span class="logo-badge">Live</span>
+      </div>
+      <div class="header-controls">
+        <select id="langSelect" class="lang-select" aria-label="Select Language">
+          <option value="en">🇬🇧 English</option>
+          <option value="hi">🇮🇳 हिन्दी</option>
+          <option value="mr">🇮🇳 मराठी</option>
+        </select>
+        <button id="bookmarkToggle" class="bookmark-toggle" aria-label="Bookmarks">
+          🔖 <span id="bookmarkCount" class="bookmark-count"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="main">
+
+    <!-- Hero Headlines -->
+    <section id="heroSection" class="hero-section" style="display:none"></section>
+
+    <!-- Search -->
+    <section class="search-section">
+      <div class="search-box">
+        <input type="text" id="searchInput" class="search-input" placeholder="Search any Indian district… e.g. Lucknow, Pune, Jaipur" autocomplete="off">
+        <button id="searchBtn" class="search-btn">🔍 Search News</button>
+      </div>
+      <div id="recentSearches" class="recent-searches"></div>
+    </section>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="latest">Latest News</button>
+      <button class="tab-btn" data-tab="live">Live News</button>
+      <button class="tab-btn" data-tab="sources">Sources</button>
+    </div>
+
+    <!-- Status bar -->
+    <div id="statusBar" class="status-bar"></div>
+
+    <!-- News / Sources Grid -->
+    <div id="newsGrid" class="news-grid"></div>
+
+  </main>
+
+  <!-- ===== BOOKMARK SIDEBAR ===== -->
+  <div id="overlay" class="overlay"></div>
+  <aside id="bookmarkSidebar" class="bookmark-sidebar">
+    <div class="bookmark-sidebar-header">
+      <span class="bookmark-sidebar-title">🔖 Bookmarks</span>
+      <button id="bookmarkClose" class="bookmark-close">✕</button>
+    </div>
+    <div id="bookmarkList" class="bookmark-list"></div>
+  </aside>
+
+  <!-- ===== LOADING OVERLAY ===== -->
+  <div id="loadingOverlay" class="loading-overlay">
+    <div class="spinner"></div>
+    <div class="loading-text">Fetching news…</div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>India Flash News © 2026 — Powered by <a href="https://newsapi.org" target="_blank">NewsAPI</a> · Built with ❤️ and Python Flask</p>
+  </footer>
+
+  <!-- ===== JS Modules ===== -->
+  <script type="module" src="js/app.js"></script>
+
+</body>
+</html>
