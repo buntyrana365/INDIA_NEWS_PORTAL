@@ -18,11 +18,8 @@ from services.fallback_service import get_fallback_sources, get_all_sources
 # App Setup
 # ---------------------------------------------------------------------------
 
-app = Flask(
-    __name__,
-    static_folder=os.path.join(os.path.dirname(__file__), ".."),
-    static_url_path="",
-)
+app = Flask(__name__)
+
 CORS(app, origins=CORS_ORIGINS)
 
 # Minimum articles before triggering fallback
@@ -146,21 +143,9 @@ def api_sources():
     return jsonify({"sources": sources})
 
 
-# ---------------------------------------------------------------------------
-# Frontend Serving
-# ---------------------------------------------------------------------------
+# Routes are now handled by Vercel for static files.
+# Only /api/* endpoints are active here.
 
-
-@app.route("/")
-def serve_index():
-    """Serve the main frontend page."""
-    return send_from_directory(app.static_folder, "index.html")
-
-
-@app.route("/<path:path>")
-def serve_static(path):
-    """Serve any static frontend file."""
-    return send_from_directory(app.static_folder, path)
 
 
 # ---------------------------------------------------------------------------

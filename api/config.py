@@ -2,7 +2,7 @@
 Application configuration — loads environment variables from .env file.
 """
 
-#hey server
+
 import os
 from dotenv import load_dotenv
 
