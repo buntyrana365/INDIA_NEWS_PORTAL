@@ -9,7 +9,7 @@ from ddgs import DDGS
 
 # In-memory cache
 _cache: dict[str, tuple[float, list]] = {}
-CACHE_TTL = 300  # 5 minutes
+CACHE_TTL = 600  # 10 minutes
 
 
 def _parse_date(date_str):
@@ -42,22 +42,24 @@ def fetch_google_news(query: str, lang: str = "en", max_results: int = 20) -> li
 
     try:
         # DDGS provides reliable image URLs natively in its news response
-        results = DDGS().news(query=query, region=region, safesearch="Moderate", max_results=max_results)
-        
-        articles = []
-        if results:
-            for item in results:
-                image_url = item.get("image", "")
-                # DDGS format: { 'title': '...', 'body': '...', 'url': '...', 'image': '...', 'source': '...', 'date': '...' }
-                articles.append({
-                    "title": item.get("title", ""),
-                    "description": item.get("body", ""),
-                    "url": item.get("url", ""),
-                    "image": image_url if image_url else "",
-                    "source": item.get("source", ""),
-                    "publishedAt": _parse_date(item.get("date", "")),
-                    "author": "",
-                })
+        with DDGS() as ddgs:
+            # Using positional argument for query to handle version differences (keywords vs query)
+            results = ddgs.news(query, region=region, safesearch="moderate", max_results=max_results)
+            
+            articles = []
+            if results:
+                for item in results:
+                    image_url = item.get("image", "")
+                    # DDGS format: { 'title': '...', 'body': '...', 'url': '...', 'image': '...', 'source': '...', 'date': '...' }
+                    articles.append({
+                        "title": item.get("title", ""),
+                        "description": item.get("body", ""),
+                        "url": item.get("url", ""),
+                        "image": image_url if image_url else "",
+                        "source": item.get("source", ""),
+                        "publishedAt": _parse_date(item.get("date", "")),
+                        "author": "",
+                    })
 
         _cache[cache_key] = (time.time(), articles)
         return articles

@@ -18,7 +18,12 @@ from services.fallback_service import get_fallback_sources, get_all_sources
 # App Setup
 # ---------------------------------------------------------------------------
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    static_folder=os.path.join(os.path.dirname(__file__), "..", "frontend"),
+    static_url_path="",
+)
+
 
 CORS(app, origins=CORS_ORIGINS)
 
@@ -143,8 +148,16 @@ def api_sources():
     return jsonify({"sources": sources})
 
 
-# Routes are now handled by Vercel for static files.
-# Only /api/* endpoints are active here.
+# Serve static files locally (not on Vercel)
+if not os.environ.get("VERCEL"):
+    @app.route("/")
+    def serve_index():
+        return send_from_directory(app.static_folder, "index.html")
+
+    @app.route("/<path:path>")
+    def serve_static(path):
+        return send_from_directory(app.static_folder, path)
+
 
 
 

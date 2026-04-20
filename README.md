@@ -1,6 +1,6 @@
 # ⚡ India Flash News
 
-![Banner](assets/banner.png)
+![Banner](frontend/assets/banner.png)
 
 A professional, high-performance news application delivering real-time updates from across India. Featuring multi-language support (English, Hindi, Marathi) and district-level precision.
 
@@ -24,7 +24,7 @@ A professional, high-performance news application delivering real-time updates f
 
 ## 📱 Visual Showcase
 
-![Mockup](assets/mockup.png)
+![Mockup](frontend/assets/mockup.png)
 
 ---
 
@@ -46,10 +46,10 @@ You can deploy this project live for free on **Vercel** in seconds:
 ### Setup
 ```bash
 # Install dependencies
-pip install -r api/requirements.txt
+pip install -r backend/requirements.txt
 
 # Run locally
-python api/index.py
+python backend/index.py
 ```
 Open `http://localhost:5000` in your browser.
 
