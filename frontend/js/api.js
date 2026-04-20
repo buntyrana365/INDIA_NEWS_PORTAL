@@ -2,7 +2,7 @@
  * API module — communicates with the Flask backend.
  */
 
-const API_BASE = window.location.origin;
+const API_BASE = 'https://india-news-portal-3.onrender.com';
 
 export async function fetchHeadlines(lang = 'en') {
   const url = `${API_BASE}/api/headlines?lang=${encodeURIComponent(lang)}`;
