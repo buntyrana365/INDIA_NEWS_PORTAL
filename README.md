@@ -41,6 +41,18 @@ You can deploy this project live for free on **Vercel** in seconds:
 
 ---
 
+### 🌐 Deploy with Render (Alternative)
+
+You can also deploy this project on **Render** for free:
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/buntyrana365/INDIA_NEWS_PORTAL)
+
+1. Click the button above or connect your GitHub repository to Render.
+2. Render will automatically detect the `render.yaml` file and configure the service.
+3. Make sure to add your `NEWS_API_KEY` in the Render dashboard's environment variables.
+
+---
+
 ## 🛠️ Local Installation
 
 ### Setup
